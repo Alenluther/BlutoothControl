@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+
+    <Button
+        android:id="@+id/centerButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/up"
+        android:enabled="false"
+        android:text="中"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/upButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@id/centerButton"
+        android:layout_alignLeft="@id/centerButton"
+        android:background="@drawable/up"
+        android:text="上" />
+
+    <Button
+        android:id="@+id/downButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@id/centerButton"
+        android:layout_below="@id/centerButton"
+        android:background="@drawable/down"
+        android:text="下" />
+
+    <Button
+        android:id="@+id/leftButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@id/centerButton"
+        android:layout_toLeftOf="@id/centerButton"
+        android:background="@drawable/left"
+        android:text="左" />
+
+    <Button
+        android:id="@+id/rightButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@id/centerButton"
+        android:layout_toRightOf="@id/centerButton"
+        android:background="@drawable/right"
+        android:text="右" />
+
+    <Button
+        android:id="@+id/accButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/leftButton"
+        android:layout_below="@id/downButton"
+        android:text="加速" />
+    <Button
+        android:id="@+id/slowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/accButton"
+        android:layout_alignRight="@id/rightButton"
+        android:text="减速"
+        />
+    <Button
+        android:id="@+id/steering_Left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/accButton"
+        android:layout_alignLeft="@+id/accButton"
+        android:text="左"/>
+
+    <Button
+        android:id="@+id/steering_Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slowButton"
+        android:layout_alignLeft="@+id/slowButton"
+        android:text="右"/>
+
+    <Button
+        android:id="@+id/steering_Middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/downButton"
+        android:layout_alignTop="@+id/steering_Left"
+        android:text="中" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:text="TextView" />
+
+
+</RelativeLayout>
